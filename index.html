@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#calculator">Age Calculator</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h1>Welcome to the Age Calculator</h1>
+        </section>
+        <section id="calculator">
+            <h2>Calculate Your Age</h2>
+            <form id="ageForm">
+                <label for="dob">Enter your Date of Birth:</label><br>
+                <input type="number" id="day" placeholder="Day" min="1" max="31" required>
+                <input type="number" id="month" placeholder="Month" min="1" max="12" required>
+                <input type="number" id="year" placeholder="Year" min="1900" required><br>
+
+                <label for="time">Enter the Time of Birth:</label><br>
+                <input type="number" id="hour" placeholder="Hour" min="0" max="23" required>
+                <input type="number" id="minute" placeholder="Minute" min="0" max="59" required>
+                <input type="number" id="second" placeholder="Second" min="0" max="59" required><br>
+                
+                <button type="button" onclick="calculateAge()">Calculate Age</button>
+            </form>
+            <p id="result"></p>
+        </section>
+        <section id="about">
+            <h2>About</h2>
+            <p>This age calculator is designed to help you calculate your exact age based on your birth date and time.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Age Calculator</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
